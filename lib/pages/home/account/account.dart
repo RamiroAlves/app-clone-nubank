@@ -43,7 +43,7 @@ class _AccountNubankState extends State<AccountNubank> {
         init: ControllerHomePage(),
         builder: (controller) {
           return Text(
-            controller.saldo,
+            controller.eyesValue ? controller.saldo : "********",
             style: const TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
           );
         });

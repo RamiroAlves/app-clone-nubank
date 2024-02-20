@@ -10,18 +10,18 @@ class NotificationsPage extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: [
-          _income(),
-          _saveMoney(),
-          _securityLife(),
-          _friendsRecomended(),
+          _income(context),
+          _saveMoney(context),
+          _securityLife(context),
+          _friendsRecomended(context),
         ],
       ),
     );
   }
 
-  _income() {
+  _income(BuildContext context) {
     return Container(
-      // width: MediaQuery.of(context).size.width * .7,
+      width: MediaQuery.of(context).size.width * .7,
       margin: const EdgeInsets.only(left: 10, top: 10, right: 20),
       padding: const EdgeInsets.all(28),
       decoration: BoxDecoration(
@@ -44,9 +44,9 @@ class NotificationsPage extends StatelessWidget {
     );
   }
 
-  _saveMoney() {
+  _saveMoney(BuildContext context) {
     return Container(
-      // width: MediaQuery.of(context).size.width * .7,
+      width: MediaQuery.of(context).size.width * .7,
       margin: const EdgeInsets.only(left: 10, top: 10, right: 20),
       padding: const EdgeInsets.all(28),
       decoration: BoxDecoration(
@@ -66,9 +66,9 @@ class NotificationsPage extends StatelessWidget {
     );
   }
 
-  _securityLife() {
+  _securityLife(BuildContext context) {
     return Container(
-      // width: MediaQuery.of(context).size.width * .7,
+      width: MediaQuery.of(context).size.width * .7,
       margin: const EdgeInsets.only(left: 10, top: 10, right: 20),
       padding: const EdgeInsets.all(28),
       decoration: BoxDecoration(
@@ -91,9 +91,9 @@ class NotificationsPage extends StatelessWidget {
     );
   }
 
-  _friendsRecomended() {
+  _friendsRecomended(BuildContext context) {
     return Container(
-      // width: MediaQuery.of(context).size.width * .7,
+      width: MediaQuery.of(context).size.width * .7,
       margin: const EdgeInsets.only(left: 10, top: 10, right: 20),
       padding: const EdgeInsets.all(28),
       decoration: BoxDecoration(

@@ -44,7 +44,7 @@ class _HeaderState extends State<Header> {
             borderRadius: BorderRadius.circular(80), color: secondaryPurple),
         child: IconButton(
             onPressed: () {},
-            icon: new Icon(
+            icon: Icon(
               MdiIcons.accountOutline,
               color: Colors.white,
             )),
@@ -71,7 +71,7 @@ class _HeaderState extends State<Header> {
             builder: (controllerHomePage) {
               return IconButton(
                   onPressed: () => controllerHomePage.showValue(),
-                  icon: new Icon(
+                  icon: Icon(
                     controllerHomePage.eyesValue
                         ? MdiIcons.eyeOutline
                         : MdiIcons.eyeOff,
@@ -80,13 +80,13 @@ class _HeaderState extends State<Header> {
             }),
         IconButton(
             onPressed: () {},
-            icon: new Icon(
+            icon: Icon(
               MdiIcons.helpCircleOutline,
               color: Colors.white,
             )),
         IconButton(
             onPressed: () {},
-            icon: new Icon(
+            icon: const Icon(
               Icons.person_add_alt_1_outlined,
               color: Colors.white,
             )),
